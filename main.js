@@ -58,3 +58,24 @@ function createscheme() {
     document.getElementById('scheme').innerHTML = scheme["1"] + " " + scheme['2'] + " " + scheme['3'] + " " + scheme['4'] + " " + scheme['5'] + " " + scheme['6'] + " " + scheme['7'];
 
 }
+
+function createsidebar() {
+    var changediv = document.getElementsByClassName('col-md-12')[0];
+    changediv.setAttribute('class', 'col-md-8');
+    var getdiv = document.getElementsByTagName('body')[0];
+    var creatediv = document.createElement('div');
+    var sidebarH = document.createElement('h1');
+    sidebarH.textContent = "Sidebar";
+    var sidebarT = document.createElement('p');
+    sidebarT.textContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget eros ultrices, dapibus lacus ultrices, ultrices tortor. Nam tincidunt blandit neque, at ornare sapien ultricies ut. Integer eget ultricies velit. Cras eu tellus ex. Integer bibendum nisi neque, sed auctor odio blandit sit amet. Aenean augue tellus, tincidunt vel commodo bibendum, rutrum nec augue. Donec pulvinar sem in purus congue sodales. Nam magna urna, maximus ut eros vel, rutrum semper sem. Duis a efficitur mauris. Nunc a aliquam nisi, vel iaculis justo. Donec lacus nulla, sollicitudin vitae lectus vel, tempus vestibulum ipsum. In dignissim consequat pellentesque. Pellentesque eget eleifend velit. Aenean aliquam auctor nibh vitae tristique. Nulla facilisi.";
+    creatediv.appendChild(sidebarH);
+    creatediv.appendChild(sidebarT);
+    creatediv.setAttribute('class', 'col-md-4');
+    getdiv.appendChild(creatediv);
+    var selector = document.getElementsByClassName('container')[0];
+    selector.before(creatediv);
+}
+
+
+
+
