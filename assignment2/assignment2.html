@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Webprogramming Assignment 1</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="/js/main.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">WP20</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="assignment2.html">Assignment 2</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="row wp-row">
+        <div class="col-md-6">
+            <h1>Contact Form</h1>
+            <p>Please enter your name, age, city, Email address and phone number. We'll contact you for more information.</p>
+            <div class="alert alert-danger" id="form-alert" role="alert">
+                Not all form fields are filled in!
+            </div>
+            <form id="inputdata" name="myForm">
+                    <label for="InputName1">Name</label>
+                    <input type="text" class="form-control" id="InputName1" placeholder="Name">
+                    <label for="InputAge1">Age</label>
+                    <input type="number" class="form-control" id="InputAge1" placeholder="Age">
+                    <label for="InputCity1">Residental City</label>
+                    <input type="text" class="form-control" id="InputCity1" placeholder="City">
+                    <label for="InputEmail1">Email Adress</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email Adress">
+                    <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
+                    <label for="InputPhone1">Phone number</label>
+                    <input type="tel" class="form-control" id="InputPhone1" placeholder="Phone number">
+                    <input type="button" value="Submit" id="submit"/>
+                    <input type="button" value="Reset" id="reset"/>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div id="form-content">
+                <table class="table table-hover">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td id="name">Reinard</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Age</th>
+                        <td id="age">23</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">City</th>
+                        <td id ="city">Groningen</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">E-mailadres</th>
+                        <td id="email">r.g.van.dalen@rug.nl</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Phone number</th>
+                        <td id="number">+31612345678</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="link-tab" href="#links">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" href="#contact">Contact</a>
+        </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane active" id="links">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="contact">
+            <p>
+                Address 1<br>
+                1111 ZZ Place<br>
+                Country
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
